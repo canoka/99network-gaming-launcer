@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Muhammet Can Karslı">
+  <meta name="designer" content="github.com/canoka">
+  <meta name="copyright" content="©2024 iREMCreative">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Gaming Launcher">
+  <title>99 Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Başlık Barı -->
+  <div class="title-bar">
+    <span style="margin-left: 10px;">99 Network</span>
+
+    <!-- Tema Değiştir Butonu -->
+    <div id="theme-toggle-area">
+      <button id="theme-toggle" class="theme-toggle">☀️</button>
+    </div>
+
+    <!-- Kapatma Butonu -->
+    <div style="margin-right: 10px;">
+      <button onclick="window.close()">❌</button>
+    </div>
+  </div>
+
+  <!-- İçerik Bölgesi -->
+  <div class="content">
+    <div class="content-area">
+      
+      <!-- CS 1.6 Bölümü -->
+      <div class="list_1">
+        <div class="title1-area">
+          <h2>CS 1.6</h2>
+          <button id="sunucuya_baglan" class="sunucuya_baglan">Sunucuya Bağlan</button>
+        </div>
+        <div class="list1_content_area">
+          <h3>-</h3>
+          <p id="player-count">-</p>
+        </div>
+        <img class="csresim" src="log-in-pages/cs_cover.jpg" alt="Counter Strike 1.6 JB Sunucusu">
+      </div>
+
+      <!-- FiveM Bölümü -->
+      <div class="list_2">
+        <div class="title2-area">
+          <h2>FiveM</h2>
+          <button id="sunucuya_baglan" class="sunucuya_baglan">Sunucuya Bağlan</button>
+        </div>
+        <div class="list2_content_area">
+          <span id="server-status-fivem">Kontrol ediliyor...</span>
+          <h3>Oyuncu Sayısı</h3>
+          <span class="fivem_user" id="userInfo">Yükleniyor...</span>
+        </div>
+        <img class="gtaresim" src="log-in-pages/gtav_cover.jpg" alt="FiveM">
+      </div>
+
+      <!-- Minecraft Bölümü -->
+      <div class="list_3">
+        <div class="title3-area">
+          <h2>Minecraft</h2>
+          <button id="sunucuya_baglan" class="sunucuya_baglan">Sunucuya Bağlan</button>
+        </div>
+        <div class="list3_content_area">
+          <h3>-</h3>
+          <span id="player-count">-</span>
+        </div>
+        <img class="mineresim" src="log-in-pages/minecraft_cover.jpg" alt="Minecraft Sunucusu" class="server-status">
+      </div>
+    </div>
+  </div>
+
+  <!-- Alt Alan -->
+  <div class="bottom-area">
+    <div class="checking-bar">
+      
+      <!-- Ayarlar Butonu -->
+      <div class="settings-bg">
+        <button id="settings">⚙️ Ayarlar</button>
+      </div>
+
+      <!-- Program Durumu ve Kontroller -->
+      <div id="program-status">
+        <ul id="status-list"></ul>
+        <button id="check-button">🔎 Dosya Durumu</button>
+      </div>
+
+      <!-- Sunucu Bağlantıları -->
+      <div class="sunucular">
+        <a href="" id="discord_baglan">
+          <img src="assets/discord.svg" alt="Discord Sunucusu">
+        </a>
+        <a href="" id="ts_baglan">
+          <img src="assets/teamspeak.svg" alt="TeamSpeak Sunucusu">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript ve Diğer Bağlantılar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>
